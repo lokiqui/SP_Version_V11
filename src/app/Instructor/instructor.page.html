@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Instructor </ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <h1>Formulario de Instructores</h1>
+  <ion-card>
+    <ion-item>
+      <ion-label>Nombre </ion-label>
+      <ion-input [([(ngModel)]="data.Nombre")]></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>Apellido </ion-label>
+      <ion-input [([(ngModel)]="data.Apellido")]></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>DNI </ion-label>
+      <ion-input type="number" [([(ngModel)]="data.DNI")]></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>Nacionalidad </ion-label>
+      <ion-input [([(ngModel)]="data.Nacionalidad")]></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label> </ion-label>
+      <ion-input [([(ngModel)]="data.Sexo")]></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label>Edad </ion-label>
+      <ion-input type="number" [([(ngModel)]="data.Edad")]></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button ((click)="crearInstructor")>Guardar</ion-button>
+  <ion-button>Modificar</ion-button>
+  <ion-button>Eliminar</ion-button>
+</ion-content>
